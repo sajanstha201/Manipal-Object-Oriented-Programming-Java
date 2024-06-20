@@ -1,0 +1,7 @@
+package EndSemExam2;
+class A extends Thread{
+	
+}
+public class multithreading {
+
+}

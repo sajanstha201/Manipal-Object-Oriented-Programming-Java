@@ -1,0 +1,8 @@
+package EndSemExam2;
+
+public class string {
+public static void main(String [] args) {
+	String s="sajan shrestha";
+	System.out.println(s.substring(1));
+}
+}

@@ -1,0 +1,24 @@
+package EndSemExam2;
+
+public class Counter {
+	private int count=0;
+	synchronized public void increment() throws Exception{
+		if(count==3) {
+			System.out.println("overflow");
+			wait();
+		}
+		count++;
+		notify();
+		System.out.println("Counte increased:"+count);
+	}
+public static void main(String [] args) {
+	try {
+		Counter c=new Counter();
+		c.increment();
+	}
+	catch(Exception e) {
+		
+	}
+
+}
+}

@@ -1,0 +1,19 @@
+package EndSemExam;
+class Shape{
+	void area() {
+		System.out.println("The area of Shape is 0");
+	}
+}
+class Rectangle extends Shape{
+	int length,bredth;
+	Rectangle(int length,int bredth){
+		this.length=length;
+		this.bredth=bredth;
+	}
+	void area() {
+		System.out.println("The are of Rectangle is"+this.length*this.bredth);
+	}
+}
+public class generic_shap {
+
+}

@@ -1,0 +1,19 @@
+package EndSemExam2;
+
+class Vehicle
+{
+void run()
+ 
+  {
+System.out.println("Vehicle is running");
+}}
+public class bike extends Vehicle{
+	void run()
+{
+System.out. println ("Bike is running safely"); }
+public static void main(String args[])
+{
+bike obj = new bike();
+obj.run();
+}
+}

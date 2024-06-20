@@ -1,0 +1,16 @@
+package EndSemExam;
+
+public class varray {
+public static void main(String [] args) {
+	varray.add(1,2,3,4,5);
+	int [][]arr=new int[3][4];
+	System.out.println(arr.length);
+	System.out.println(arr[0].length);
+	
+}
+static void add(int ...a) {
+	for(int ae:a) {
+		System.out.println(ae);
+	}
+}
+}

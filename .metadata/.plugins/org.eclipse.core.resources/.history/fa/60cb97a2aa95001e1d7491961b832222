@@ -1,0 +1,31 @@
+package control;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+public class COMBOBOX extends Application{
+public void start(Stage primaryStage) {
+	Label lb=new Label("Select the person");
+	VBox v=new VBox();
+	ComboBox <String>comb=new ComboBox<String>();
+	comb.getItems().add("sajan");
+	comb.getItems().add("deep");
+	comb.getItems().add("devraj");
+	Button b=new Button("click me");
+	Label label=new Label("here");
+	b.setOnAction(event->{
+		label.setText(cb.getValue());
+	});
+	v.getChildren().addAll(lb,comb);
+	Scene scene=new Scene(v);
+	primaryStage.setScene(scene);
+	primaryStage.setWidth(500);
+	primaryStage.setHeight(500);
+	primaryStage.show();
+}
+public static void main(String [] args) {
+	launch();
+}
+}

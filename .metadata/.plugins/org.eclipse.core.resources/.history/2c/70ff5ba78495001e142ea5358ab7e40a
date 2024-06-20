@@ -1,0 +1,8 @@
+package EndSemExam2;
+public class packag {
+public static void main(String [] args) {
+	EndSemExam.A a=new EndSemExam.A();
+	a.method2();
+	
+}
+}

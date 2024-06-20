@@ -1,0 +1,13 @@
+package EndSemExam;
+
+public class varray {
+public static void main(String [] args) {
+	varray.add(1,2,3,4,5);
+	
+}
+static void add(int ...a) {
+	for(int ae:a) {
+		System.out.println(ae);
+	}
+}
+}

@@ -1,0 +1,14 @@
+package EndSemExam2;
+public class CounterDemo
+{ <T> void bubbleSort(T[] data)
+{ for(int a=1; a < data.length; a++)
+for(int b=data.length-1; b >= a; b--)
+{ if(data[b-1] > data[b])
+{ // if out of order // exchange elements
+} }
+}
+public class my {
+public static void main(String [] args) {
+	
+}
+}

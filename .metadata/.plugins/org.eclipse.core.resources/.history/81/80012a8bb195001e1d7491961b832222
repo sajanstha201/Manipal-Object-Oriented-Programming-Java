@@ -1,0 +1,8 @@
+package EndSemExam;
+interface if{
+	int x=10;
+	void add(int t);
+}
+public class interfacex implements if{
+
+}

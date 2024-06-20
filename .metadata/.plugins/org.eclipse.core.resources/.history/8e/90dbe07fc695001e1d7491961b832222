@@ -1,0 +1,15 @@
+package EndSemExam2;
+import java.util.*;
+public class arralylist {
+public static void main(String [] args) {
+	ArrayList<String> arr=new ArrayList<>();
+	arr.add("sajan");
+	arr.add("deep");
+	System.out.println(arr);
+	String st="hello my name is sajan shrestha  g";
+	String split[]=st.split(" ");
+	for(String e:split) {
+		System.out.println(e);
+	}
+}
+}

@@ -1,0 +1,12 @@
+package javaFx;
+class Account{
+	private int acno,pass,amount;
+	Account(int acno,int pass,int amount){
+		this.acno=acno;
+		this.pass=pass;
+		this.amount=amount;
+	}
+}
+public class AccountATM {
+
+}

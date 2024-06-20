@@ -1,0 +1,9 @@
+package EndSemExam;
+class Shape{
+	void area() {
+		System.out.println("The area of Shape is 0");
+	}
+}
+public class generic_shap {
+
+}

@@ -1,0 +1,13 @@
+package EndSemExam2;
+public class packag {
+public static void main(String [] args) {
+	EndSemExam.A a=new EndSemExam.A();
+	a.method2();
+	EndSemExam.A.D d=a.new D();
+}
+}
+class D extends EndSemExam.A{
+	void print() {
+		System.out.println()
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;practise&apos; to &apos;Java Programming: Arrays, Lists, and Sturcutre Data/src&apos;&#x0A;- Original project: &apos;lab&apos;&#x0A;- Destination element: &apos;Java Programming: Arrays, Lists, and Sturcutre Data/src&apos;&#x0A;- Original element: &apos;lab/src/practise&apos;" description="Copy package" destination="=Java Programming: Arrays, Lists, and Sturcutre Data/src" element1="/src&lt;practise" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1697344033871" version="1.0"/>
+</session>

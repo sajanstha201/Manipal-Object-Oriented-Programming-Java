@@ -1,0 +1,18 @@
+package javaFx;
+import javafx.scene.canvas.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.application.*;
+import javafx.stage.*;
+public class shape extends Application{
+	public void start(Stage primarystage) {
+		GridPane g=new GridPane();
+		
+		primarystage.setTitle("shape");
+		primarystage.show();
+	}
+public static void main(String [] args) {
+	launch(args);
+}
+}

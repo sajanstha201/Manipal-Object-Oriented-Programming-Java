@@ -1,0 +1,18 @@
+package EndSemExam2;
+class Ax{
+	synchronized public void add() {
+		int i;
+		for(i=0;i<100000;i++);
+			System.out.println(i);
+	}
+	public void sub() {
+		int i;
+		for(i=0;i<100;i++)
+			System.out.println("sajan shrestha skdfljsdlfjslfjsdlfj");
+	}
+}
+public class multithreading {
+public static void main(String [] args) {
+	Thread t1=new Thread()
+}
+}

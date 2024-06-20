@@ -1,0 +1,9 @@
+package EndSemExam;
+class List<T>{
+	
+}
+public class genericSIngleLinkedLIst {
+public static void main(String []args) {
+	
+}
+}

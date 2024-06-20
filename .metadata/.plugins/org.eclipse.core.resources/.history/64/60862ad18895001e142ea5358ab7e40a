@@ -1,0 +1,19 @@
+package EndSemExam2;
+interface A{
+final int a=5;
+static int b=6;
+int c=9;//invalid
+private int d=10;//invalid
+abstract int x;//invlaid
+static void add(){
+System.out.println(“This is from add method”);
+}
+final void sub(){
+System.out.pritnln(“This is form sub method”);
+}
+Void mul();
+abstract void dul();
+}
+public class interace {
+
+}

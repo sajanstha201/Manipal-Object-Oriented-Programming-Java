@@ -1,0 +1,6 @@
+package subclass.copy;
+public class A {
+public A(){
+	System.out.println("This is from class A ");
+}
+}

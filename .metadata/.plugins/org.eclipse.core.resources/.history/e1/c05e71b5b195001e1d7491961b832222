@@ -1,0 +1,14 @@
+package EndSemExam;
+interface ifn{
+	int x=10;
+	void add(int t);
+}
+public class interfacex implements ifn{
+	public void add(int t) {
+		x=t;
+		System.out.println(x);
+	}
+	public static void main(String [] args) {
+		
+	}
+}

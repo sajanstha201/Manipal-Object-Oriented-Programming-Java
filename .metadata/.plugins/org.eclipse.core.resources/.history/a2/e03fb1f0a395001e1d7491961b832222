@@ -1,0 +1,31 @@
+package EndSemExam2;
+import java.util.*;
+interface ti{
+	void reserve(int n);
+	void cancel(int n);
+}
+class tic implements ti{
+	int s=50;
+	synchronized public void reserve(int n) {
+		this.s+=n;
+	}
+	public void cancel(int n) {
+		this.s-=n;
+	}
+}
+public class ticket {
+public static void main(String [] args) {
+	tic t=new tic();
+	while(true) {
+		System.out.println("Enter y for reservation:");
+		Scanner sc=new Scanner(System.in);
+		char c=sc.next();
+		Thread t1=new Thread(new Runnable() {
+			public void run() {
+				
+			}
+		});
+	}
+
+}
+}

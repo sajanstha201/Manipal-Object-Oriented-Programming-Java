@@ -1,0 +1,22 @@
+package javaFx;
+import javafx.scene.canvas.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.application.*;
+import javafx.stage.*;
+import javafx.collections.*;
+public class shape extends Application{
+	public void start(Stage primarystage) {
+		GridPane g=new GridPane();
+		ObservableList<String> ob=new ObservableList(null);
+		ob.add("circle");
+		ob.add("rectangle");
+		primarystage.setTitle("shape");
+		primarystage.show();
+	}
+public static void main(String [] args) {
+	launch(args);
+}
+}
+

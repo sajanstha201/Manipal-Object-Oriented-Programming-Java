@@ -1,0 +1,44 @@
+package control;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
+public class LISTVIEW extends Application{
+public void start(Stage prime) {
+	ListView <String>list=new ListView<String>();
+	list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+	list.getItems().add("sajan");
+	list.getItems().add("deep");
+	list.getItems().add("devraj");
+	VBox v=new VBox();
+	v.getChildren().addAll(list);
+	Scene scene=new Scene(v);
+	prime.setScene(scene);
+	prime.setWidth(500);
+	prime.setHeight(500);
+	prime.show();		ListView<Integer> list=new ListView<>();
+	int NoOfStudent=st.length;
+	int i;
+	for(i=0;i<NoOfStudent;i++) {
+		list.getItems().add(st[i].id+1);
+	}
+	Canvas cv=new Canvas(500,200);
+	gc=cv.getGraphicsContext2D();
+	list.getSelectionModel().selectedItemProperty().addListener((observable,oldval,newval)->{
+		int j;
+		String str="";
+		for(j=0;j<10;j++) {
+			if(st[j].id==newval-1) {
+				str+="\nName: "+st[j].name+" \n ID: "+st[j].id;
+				gc.clearRect(0, 0,500,200);
+				gc.fillText(str,5,20);
+			}
+		}
+	});
+}
+public static void main(String [] args) {
+	launch();
+}
+}

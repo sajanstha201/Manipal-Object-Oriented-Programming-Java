@@ -1,0 +1,24 @@
+package EndSemExam2;
+interface ti{
+	void reserve(int n);
+	void cancel(int n);
+}
+class tic implements ti{
+	int s=50;
+	synchronized public void reserve(int n) {
+		this.s+=n;
+	}
+	public void cancel(int n) {
+		this.s-=n;
+	}
+}
+public class ticket {
+public static void main(String [] args) {
+	tic t=new tic();
+	Thread t1=new Thread(new Runnable() {
+		public void run() {
+			
+		}
+	});
+}
+}

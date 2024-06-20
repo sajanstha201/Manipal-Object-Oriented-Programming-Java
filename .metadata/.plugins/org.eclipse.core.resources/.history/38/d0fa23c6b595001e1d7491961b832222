@@ -1,0 +1,8 @@
+package EndSemExam;
+
+public class thread extends Thread{
+public void run() {
+	System.out.println("this is form thread class")
+}
+p
+}

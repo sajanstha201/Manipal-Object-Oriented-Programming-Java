@@ -1,0 +1,29 @@
+package EndSemExam2;
+class B extends Thread{
+	public void run(){
+		synchronized(this) {
+			int i;
+			for(i=0;i<100;i++)
+				System.out.println(i);
+		}
+	}
+}
+public class syc {
+	public static void main(String [] args) {
+		try {
+			B b=new B();
+			b.start();
+			B d=new B();
+			synchronized(d) {
+				System.out.println("sajan shrestha");
+				b.wait();
+				System.out.println("skdlj");
+			}
+		}
+		catch(Exception e) {
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package EndSemExam2;
+interface A{
+final int a=5;
+static int b=6;
+int c=9;//invalid
+private int d=10;//invalid
+abstract int x;//invlaid
+static void add(){
+System.out.println("add ");
+}
+//final void dd() {
+//	System.out.println("helelo");
+//}
+//void sub(){
+//System.out.pritnln("sub");
+//}
+void mul();
+abstract void dul();
+}
+public class interace implements A{
+	void mul() {
+		System.out.println("mul");
+	}
+public static void main(String[] args) {
+	
+}
+}

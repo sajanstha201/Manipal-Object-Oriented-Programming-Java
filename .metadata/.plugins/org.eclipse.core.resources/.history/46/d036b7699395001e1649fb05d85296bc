@@ -1,0 +1,12 @@
+package EndSemExam2;
+class B extends Thread{
+	
+}
+public class syc {
+	public static void main(String [] args) {
+		synchronized() {
+			
+		}
+	}
+
+}

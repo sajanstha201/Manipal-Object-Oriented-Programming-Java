@@ -1,0 +1,52 @@
+package javaFx;
+import javafx.scene.canvas.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.application.*;
+import javafx.stage.*;
+import javafx.collections.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+public class any extends Application{
+	public void start(Stage primarystage) {
+		Canvas c=new Canvas(200,200);
+		GraphicsContext gc=c.getGraphicsContext2D();
+		GridPane gp=new GridPane();
+		ObservableList<String> ob=FXCollections.observableArrayList("circle","rectangle");
+		ComboBox <String> cb=new ComboBox<>(ob);
+		cb.valueProperty().addListener((observable,oldvalue,newvalue)->{
+			gc.clearRect(0,0,gp.getWidth(),gp.getHeight());
+			if(newvalue=="circle")
+				gc.fillOval(0.5, 0.5, 100,100);
+			if(newvalue=="rectangle")
+				gc.fillRect(0.5, 0.5, 100, 100);
+		});
+		Button btn=new Button("change color");
+		btn.setOnAction(new EventHandler<ActionEvent>(){
+			public void handle(ActionEvent e) {
+				System.out.println("sajan");
+				if(Math.random()>0.5)
+					gc.setFill(Color.RED);
+				else
+					gc.setFill(Color.BLUE);
+				if(cb.getValue()=="circle")
+					gc.fillOval(0.5, 0.5, 100, 100);
+				else
+					gc.fillRect(.5, 0.5, 100, 100);
+			}
+		});
+		gp.add(btn, 0, 0);
+		gp.add(cb, 1, 0);
+		gp.add(c, 2, 0);
+		Scene sc=new Scene(gp);
+		primarystage.setScene(sc);
+		primarystage.setTitle("shape");
+		primarystage.show();
+	}
+public static void main(String [] args) {
+	launch(args);
+}
+}
+

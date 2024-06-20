@@ -1,0 +1,23 @@
+package EndSemExam;
+class List{
+	Node head=null;
+	<T>void insert(T t) {
+		Node <T>node=new Node<>();
+		node.data=t;
+		if(head==null) {
+			head=node;
+			node.next=null;
+			return;
+		}
+		List <?>trav=head;
+	}
+}
+class Node<T>{
+	T data;
+	List next;
+}
+public class genericSIngleLinkedLIst {
+public static void main(String []args) {
+	
+}
+}

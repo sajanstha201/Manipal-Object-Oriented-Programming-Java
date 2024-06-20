@@ -1,0 +1,18 @@
+package EndSemExam;
+class List<T>{
+	T data;
+	List head=null;
+	void insert(T t) {
+		List node;
+		node.data=t;
+		if(head==null) {
+			
+		}
+			
+	}
+}
+public class genericSIngleLinkedLIst {
+public static void main(String []args) {
+	
+}
+}

@@ -1,0 +1,24 @@
+package javaFx;
+import javafx.scene.control.*;
+import javafx.stage.*;
+import javafx.application.*;
+import javafx.scene.layout.*;
+class Account{
+	int acno,pass,amount;
+	Account(int acno,int pass,int amount){
+		this.acno=acno;
+		this.pass=pass;
+		this.amount=amount;
+	}
+}
+public class AccountATM extends Application{
+	public void start(Stage prime) {
+		
+	}
+public static void main(String [] args) {
+	Account sajan=new Account(01,1234,500);
+	Account deep=new Account(02,1234,1000);
+	Account devraj=new Account(03,4321,10);
+	launch(args);
+}
+}

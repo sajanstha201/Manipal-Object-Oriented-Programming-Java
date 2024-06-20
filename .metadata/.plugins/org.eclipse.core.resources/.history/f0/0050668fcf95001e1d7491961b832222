@@ -1,0 +1,15 @@
+package EndSemExam2;
+class CounterDemo{
+	<T> void bubbleSort(T[] data){ 
+	for(int a=1; a < data.length; a++)
+	for(int b=data.length-1; b >= a; b--){
+		if(data[b-1] > data[b]){T x = data[b-1]; data[b-1] = data[b]; data[b] = x;
+		}
+		} 
+	}
+}
+public class my {
+public static void main(String [] args) {
+	
+}
+}

@@ -1,0 +1,57 @@
+package EndSemExam2;
+
+public class Counter {
+	private int count=0;
+	synchronized public void increment() throws Exception{
+		
+		if(count==3) {
+			System.out.println("overflow");
+			wait();
+		}
+		count++;
+		notify();
+		Thread.sleep(1000);
+		System.out.println("Counte increased:"+count);
+	}
+	synchronized public void decrement()throws Exception{
+		if(count==0) {
+			System.out.println("underflow");
+			wait();
+		}
+		
+		count--;
+		notify();
+		System.out.println("Count decremented: "+count);
+	}
+public static void main(String [] args) {
+	try {
+		Counter c=new Counter();
+
+			Thread t1=new Thread(()->{
+				try {
+					int i=0;
+					for(i=0;i<10;i++)
+						c.increment();
+					Thread.sleep(50);
+				}
+				catch(Exception e) {}
+				
+			});
+			Thread t2=new Thread(()->{
+				try {
+					int j=0;
+					for(j=0;j<10;j++)
+						c.decrement();
+					Thread.sleep(50);
+				}
+				catch(Exception e) {}	
+			});
+			t2.start();
+			t1.start();
+	}
+	catch(Exception e) {
+		
+	}
+
+}
+}

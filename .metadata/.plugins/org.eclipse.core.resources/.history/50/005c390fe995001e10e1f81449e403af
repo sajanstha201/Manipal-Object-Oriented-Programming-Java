@@ -1,0 +1,13 @@
+package EndSemExam2;
+
+public class ih extends A{
+	public static void main(String [] args) {
+		super.add();
+	}
+}
+class A{
+	int c=10;
+	void add() {
+		System.out.println("this is from class A add method");
+	}
+}
